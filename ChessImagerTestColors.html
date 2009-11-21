@@ -1,0 +1,43 @@
+<html>
+<title>ChessImager Color Tests</title>
+
+<body>
+
+<p>
+Default colors<br/>
+<img src="./ChessImager.php?fen=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/">
+</p>
+
+<p>
+Dark squares blue, with parentheses<br/>
+<img src="./ChessImager.php?fen=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/&ds_color=(0,0,255)">
+</p>
+
+<p>
+Dark squares blue, without parentheses<br/>
+<img src="./ChessImager.php?fen=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/&ds_color=0,0,255">
+</p>
+
+<p>
+Light squares pink<br/>
+<img src="./ChessImager.php?fen=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/&ls_color=(255,200,200)">
+</p>
+
+<p>
+Outline red<br/>
+<img src="./ChessImager.php?fen=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/&outline_color=(255,0,0)">
+</p>
+
+<p>
+Outline red with 5-pixel border<br/>
+<img src="./ChessImager.php?fen=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/&outline_color=(255,0,0)&border_width=5">
+</p>
+
+<p>
+Default outline color with 5-pixel border<br/>
+<img src="./ChessImager.php?fen=rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR/&border_width=5">
+</p>
+
+</body>
+
+</html>
