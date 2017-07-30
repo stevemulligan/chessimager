@@ -224,11 +224,11 @@ function parseFenString($str)
       continue;
     }
 
-    else if (ereg("[prnbqkPRNBQK]", $char)) {
+    else if (preg_match("/[prnbqkPRNBQK]/", $char)) {
       $out[$count++] = $char;
     }
 
-    else if (ereg("[1-8]", $char)) {
+    else if (preg_match("/[1-8]/", $char)) {
       for ($c = 0; $c < $char; $c++) {
         $out[$count++] = " ";
       }
